@@ -3,6 +3,7 @@ const fs = require("fs");
 const PORT = process.env.PORT;
 const hostName = "127.0.0.1";
 
+//http server
 const server = http.createServer((req, res) => {
   const handleReadFile = (statusCode, fileLocation) => {
     fs.readFile(fileLocation, (err, data) => {
